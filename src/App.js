@@ -23,6 +23,7 @@ import ComponentMain from "./components/pages/contextapi/ComponentMain";
 import AddFormInput from "./components/pages/AddFormInput";
 import MultiStepFormMui from "./components/pages/MultiStepper/MultiStepFormMui";
 import ResumeUploader from "./components/pages/ResumeUploader.jsx";
+import ReactInfinityScroll from "./components/pages/ReactInfinityScroll/ReactInfinityScroll";
 
 function App() {
   return (
@@ -64,6 +65,10 @@ function App() {
             <Route path="addforminput" element={<AddFormInput />} />
             <Route path="multistepformmui" element={<MultiStepFormMui />} />
             <Route path="resumeuploader" element={<ResumeUploader />} />
+            <Route
+              path="reactinfinityscroll"
+              element={<ReactInfinityScroll />}
+            />
           </Route>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<h1>Error 404 Page not found!!</h1>} />
